@@ -1,0 +1,20 @@
+.mypad
+{
+	padding-top : 10px;
+}
+
+.foot
+{
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
+.error
+{
+	background-color:red;
+	color:white;
+	font-size:20px;
+	margin-left:25%;
+	margin-right:25%;
+}
