@@ -16,18 +16,22 @@
 				<h1 class="text-white text-center">Register User</h1>
 			</div>
 			<div class="card-body">
-				<form action="LoginServlet" method="post">
+				<form action="uservalidate.jsp" method="post">
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Login ID</label>
 						<div class="col-md-5">
-							<input class="form-control" type="text" name="l_id" />
+							<input class="form-control" type="text" 
+							name="l_id" />
+							<span class="bg-danger text-light" >${id_error}</span>
 						</div>
 
 					</div>
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Password</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="password" 
+							name="l_pass" />
+							<span class="bg-danger text-light" >${pass_error}</span>
 						</div>
 
 					</div>
@@ -35,21 +39,27 @@
 						<label class="form-label offset-md-2 col-md-3">Confirm
 							Password</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="password" 
+							name="c_pass" />
+							<span class="bg-danger text-light" >${c_pass_error}</span>
 						</div>
 
 					</div>
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">First Name</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="text" 
+							name="f_name" />
+							<span class="bg-danger text-light" >${fname_error}</span>
 						</div>
 
 					</div>
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Last Name</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="text"
+							 name="l_name" />
+							 <span class="bg-danger text-light" >${lname_error}</span>
 						</div>
 
 					</div>
@@ -57,20 +67,23 @@
 						<label class="form-label offset-md-2 col-md-3">Phone
 							Number</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="phone" 
+							name="phone" />
+							<span class="bg-danger text-light" >${phone_error}</span>
 						</div>
 
 					</div>
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Email</label>
 						<div class="col-md-5">
-							<input class="form-control" type="password" name="l_pass" />
+							<input class="form-control" type="email" 
+							name="email" />
+							<span class="bg-danger text-light" >${email_error}</span>
 						</div>
 
 					</div>
 					<div class="form-group row mypad">
-						<input class="btn btn-warning btn-lg offset-md-4 col-md-4"
-							type="submit" value="LOG IN" />
+						<input type="submit" value="Register" class="btn btn-lg btn-warning" />
 					</div>
 				</form>
 			</div>

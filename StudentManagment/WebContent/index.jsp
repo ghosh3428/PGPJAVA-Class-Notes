@@ -17,6 +17,7 @@
 			</div>
 			<div class="card-body">
 				<h3>Welcome to our website</h3>
+				<h3 class="bg-success">${message}</h3>
 			</div>
 		</div>
 	</div>
