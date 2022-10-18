@@ -9,14 +9,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@include file="usernav.jsp"%>
+	<%@include file="adminnav.jsp"%>
 	<div class="container">
 		<div class="card">
-			<div class="card-header bg-success text-light">
-				<h1>NIIT JADAVPUR - USER PAGE</h1>
+			<div class="card-header bg-primary text-light">
+				<h1>NIIT JADAVPUR - ADMIN PAGE</h1>
 			</div>
 			<div class="card-body">
-				<h3>Welcome User</h3>
+				<h3>Welcome Admin</h3>
 				<h3 class="bg-success">${message}</h3>
 			</div>
 		</div>

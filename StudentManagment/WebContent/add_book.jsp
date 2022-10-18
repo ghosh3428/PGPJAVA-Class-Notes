@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%@include file="adminnav.jsp"%>
 <h1 class="text-center">Book Management</h1>
 <form>
 <div class="form-group row mypad">

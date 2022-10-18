@@ -12,11 +12,11 @@
 <%@include file="menu.jsp" %>
 	<div class="container">
 		<div class="card">
-			<div class="card-header bg-primary">
-				<h1 class="text-white text-center">User Login</h1>
+			<div class="card-header bg-success">
+				<h1 class="text-white text-center">Admin Login</h1>
 			</div>
 			<div class="card-body">
-				<form action="user.jsp" method="post">
+				<form action="admin.jsp" method="post">
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Login ID</label>
 						<div class="col-md-5">
@@ -36,8 +36,7 @@
 					<div class="error"> ${error} </div>
 				</form>
 			</div>
-			<div class="card-footer bg-primary text-end text-white">
-			new user </div>
+			<div class="card-footer bg-success text-end text-white"></div>
 		</div>
 	</div>
 	<%@include file="footer.jsp" %>

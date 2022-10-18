@@ -15,13 +15,19 @@
 			<div class="container-fluid">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link text-light"
-						href="index.jsp">Home</a></li>
+						href="#">Home</a></li>
 					<li class="nav-item"><a class="nav-link text-light"
-						href="login.jsp">User Login</a></li>
+						href="add_book.jsp">Add Book</a></li>
 					<li class="nav-item"><a class="nav-link text-light"
-						href="register.jsp">User Register</a></li>
-						<li class="nav-item"><a class="nav-link text-light"
-						href="adminlogin.jsp">Admin Login</a></li>
+						href="#">Delete Book</a></li>
+					<li class="nav-item"><a class="nav-link text-light"
+						href="#">Update Book</a></li>'
+					<li class="nav-item"><a class="nav-link text-light"
+						href="#">View Book</a></li>
+				</ul>
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-link text-light"
+						href="index.jsp">Logout</a></li>
 				</ul>
 			</div>
 
