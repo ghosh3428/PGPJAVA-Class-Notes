@@ -16,7 +16,7 @@
 				<h1 class="text-white text-center">User Login</h1>
 			</div>
 			<div class="card-body">
-				<form action="user.jsp" method="post">
+				<form action="LoginServlet" method="post">
 					<div class="form-group row mypad">
 						<label class="form-label offset-md-2 col-md-3">Login ID</label>
 						<div class="col-md-5">

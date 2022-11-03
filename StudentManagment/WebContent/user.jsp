@@ -16,7 +16,7 @@
 				<h1>NIIT JADAVPUR - USER PAGE</h1>
 			</div>
 			<div class="card-body">
-				<h3>Welcome User</h3>
+				<h3>Welcome ${firstName} ${lastName}</h3>
 				<h3 class="bg-success">${message}</h3>
 			</div>
 		</div>

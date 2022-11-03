@@ -38,7 +38,6 @@ public class RegisterServlet extends HttpServlet {
 			pst.setNString(6, request.getParameter("email"));
 			
 			pst.executeUpdate();
-			con.commit();
 			con.close();
 			
 			

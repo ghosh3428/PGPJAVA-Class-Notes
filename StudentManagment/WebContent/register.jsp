@@ -15,6 +15,7 @@
 			<div class="card-header bg-primary">
 				<h1 class="text-white text-center">Register User</h1>
 			</div>
+			<h1 class="text-warning"> ${message}</h1>
 			<div class="card-body">
 				<form action="uservalidate.jsp" method="post">
 					<div class="form-group row mypad">

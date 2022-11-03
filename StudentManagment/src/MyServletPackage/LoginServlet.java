@@ -25,6 +25,7 @@ public class LoginServlet extends HttpServlet
 			String id = request.getParameter("l_id");
 			String pass = request.getParameter("l_pass");
 			String rpass= "";
+			String f_name="" , l_name="";
 			
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
@@ -38,12 +39,34 @@ public class LoginServlet extends HttpServlet
 			
 			try {
 				Connection cl= DriverManager.getConnection(url,user,password);
-				String query="Select password from OnlineUser where login_id=?";
+				String query="Select online_password, first_name , last_name from OnlineUser where login_id=?";
 				PreparedStatement pst=cl.prepareStatement(query);
 				pst.setString(1,id);
 				ResultSet rs=pst.executeQuery();
 				if(rs.next())
+				{
 					rpass= rs.getString(1);
+					f_name = rs.getString(2);
+					l_name = rs.getString(3);
+					
+					if(pass.equals(rpass))
+					{
+						request.setAttribute("firstName", f_name);
+						request.setAttribute("lastName", l_name);
+						request.getRequestDispatcher("/user.jsp").forward (request ,response);
+					}
+						else
+					{
+						request.setAttribute("error","incorrect password");
+						request.getRequestDispatcher("/login.jsp").forward(request,response);
+						
+					}
+				}
+				else
+				{
+					request.setAttribute("message", "Please register before log in.");
+					request.getRequestDispatcher("/register.jsp").forward(request, response);
+				}
 				cl.close();
 				
 				
@@ -52,14 +75,7 @@ public class LoginServlet extends HttpServlet
 				e.printStackTrace();
 			}
 			
-			if(pass.equals(rpass))
-				request.getRequestDispatcher("/user.jsp").forward (request ,response);
-			else
-			{
-				request.setAttribute("error","incorrect password");
-				request.getRequestDispatcher("/user.jsp").forward(request,response);
-				
-			}
+			
 	}
 
 }
